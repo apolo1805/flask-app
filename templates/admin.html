@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>Messages Administration</title>
+</head>
+<body>
+	<h1>List of form messages</h1>
+
+	<ul>
+		{% for msg in messages %}
+		<li>
+			<strong>{{msg.name}}</strong>: {{msg.message}}
+		</li>
+		{% endfor %}
+	</ul>
+
+	<a href="/">Back to home page</a>
+</body>
+</html>
